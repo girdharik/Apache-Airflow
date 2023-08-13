@@ -29,3 +29,9 @@ t2 = PythonOperator(
     python_callable=data_cleaner,
     dag=dag
 )
+
+t3 = MySqlOperator(
+    task_id='create_mysql_table',
+    mysql_conn_id='mysql_conn',
+    sql=
+)
